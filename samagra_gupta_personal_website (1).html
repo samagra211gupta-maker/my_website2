@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f5f5f7">
+<meta name="description" content="Samagra Gupta — Product Marketing Manager at HCLSoftware, IIM Indore MBA. Product positioning, demand generation, and enterprise technology.">
+<title>Samagra Gupta — Product Marketing & Growth</title>
+<style>
+  :root {
+    --bg: #f5f5f7;
+    --surface: rgba(255,255,255,.78);
+    --surface-solid: #fff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --line: rgba(0,0,0,.09);
+    --blue: #0071e3;
+    --blue-hover: #0077ed;
+    --shadow: 0 18px 55px rgba(0,0,0,.055);
+    --radius: 28px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased; line-height: 1.5;
+  }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; }
+  .nav-wrap { position: sticky; top: 0; z-index: 20; background: rgba(245,245,247,.78); backdrop-filter: saturate(180%) blur(22px); border-bottom: 1px solid rgba(0,0,0,.06); }
+  nav { max-width: 1120px; margin: auto; padding: 0 28px; height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .brand { font-size: 15px; font-weight: 650; letter-spacing: -.35px; white-space: nowrap; }
+  .nav-links { display: flex; gap: 27px; align-items: center; font-size: 12px; color: #424245; }
+  .nav-links a { transition: color .2s; }
+  .nav-links a:hover { color: var(--blue); }
+  .nav-cta { color: var(--blue) !important; }
+  .menu-btn { display: none; background: none; border: 0; color: var(--text); font-size: 22px; padding: 6px; cursor: pointer; }
+  main { overflow: hidden; }
+  .container { max-width: 1120px; padding: 0 28px; margin: 0 auto; }
+  .hero { padding: 86px 0 74px; text-align: center; }
+  .eyebrow { font-size: 13px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; font-weight: 650; }
+  h1 { font-size: clamp(52px, 8.5vw, 96px); line-height: .98; letter-spacing: -.075em; margin: 23px 0 22px; font-weight: 700; }
+  .gradient { background: linear-gradient(105deg, #1d1d1f 10%, #515158 52%, #86868b 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero-copy { max-width: 700px; margin: 0 auto; font-size: clamp(19px, 2.4vw, 25px); letter-spacing: -.025em; line-height: 1.4; color: #515154; }
+  .hero-copy strong { color: var(--text); font-weight: 600; }
+  .hero-actions { display: flex; justify-content: center; align-items: center; gap: 18px; margin-top: 31px; flex-wrap: wrap; }
+  .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 20px; border-radius: 999px; font-size: 15px; font-weight: 550; transition: transform .2s, background .2s, box-shadow .2s; cursor: pointer; border: 1px solid transparent; }
+  .button:hover { transform: translateY(-2px); }
+  .button.primary { color: white; background: var(--blue); box-shadow: 0 5px 16px rgba(0,113,227,.18); }
+  .button.primary:hover { background: var(--blue-hover); }
+  .button.secondary { color: var(--blue); background: transparent; }
+  .button.secondary:hover { background: rgba(0,113,227,.07); }
+  .hero-panel { max-width: 1000px; margin: 18px auto 0; padding: 0 28px; }
+  .hero-art { position: relative; min-height: 285px; border-radius: 32px; overflow: hidden; background: radial-gradient(ellipse at 50% 115%, rgba(0,113,227,.28), transparent 52%), linear-gradient(135deg,#111827,#1d2735 48%,#303d4c); box-shadow: var(--shadow); display: flex; align-items: center; justify-content: center; }
+  .hero-art:before, .hero-art:after { content:""; position:absolute; border-radius:50%; border:1px solid rgba(255,255,255,.13); width:340px;height:340px; }
+  .hero-art:after { width:470px;height:470px; }
+  .orb { position: absolute; width: 210px; height: 210px; border-radius: 50%; background: radial-gradient(circle at 33% 25%, #dbeafe 0%, #72a9e9 17%, #2563a6 42%, #142c4c 70%); box-shadow: inset -18px -22px 38px rgba(0,0,0,.45), 0 0 90px rgba(70,142,230,.23); }
+  .art-caption { position: absolute; left: 28px; bottom: 24px; color: rgba(255,255,255,.75); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+  .art-caption strong { color: white; display: block; font-size: 17px; letter-spacing: -.02em; text-transform: none; font-weight: 550; }
+  .section { padding: 76px 0; }
+  .section-heading { text-align: center; margin: 0 auto 38px; max-width: 730px; }
+  .section-heading h2 { font-size: clamp(34px, 5vw, 54px); letter-spacing: -.06em; line-height: 1.06; margin: 0 0 14px; }
+  .section-heading p { margin: 0; font-size: 18px; color: var(--muted); letter-spacing: -.02em; }
+  .grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+  .card { background: var(--surface-solid); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,.025); }
+  .card .icon { width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; background: #f2f7ff; color: var(--blue); font-size: 22px; margin-bottom: 23px; }
+  .card h3 { font-size: 22px; line-height: 1.15; letter-spacing: -.04em; margin: 0 0 10px; }
+  .card p { color: var(--muted); font-size: 15px; line-height: 1.65; margin: 0; }
+  .experience { display: grid; grid-template-columns: .8fr 1.2fr; gap: 24px; align-items: start; }
+  .experience-intro { position: sticky; top: 92px; }
+  .experience-intro h2 { font-size: clamp(38px, 5vw, 58px); letter-spacing: -.065em; line-height: 1.02; margin: 0 0 18px; }
+  .experience-intro p { color: var(--muted); font-size: 17px; max-width: 330px; }
+  .timeline { display: grid; gap: 13px; }
+  .job { background: white; border-radius: 23px; padding: 25px 26px; box-shadow: var(--shadow); display: grid; grid-template-columns: 1fr auto; gap: 8px 18px; border: 1px solid rgba(0,0,0,.025); }
+  .job h3 { margin: 0; font-size: 21px; letter-spacing: -.04em; }
+  .job .role { font-size: 15px; color: #424245; margin-top: 2px; }
+  .job .meta { color: var(--muted); font-size: 13px; margin-top: 8px; }
+  .job .date { color: var(--muted); font-size: 12px; text-align: right; white-space: nowrap; padding-top: 5px; }
+  .job.current { border: 1px solid rgba(0,113,227,.2); background: linear-gradient(135deg,#fff,#f8fbff); }
+  .current-tag { display: inline-flex; font-size: 11px; color: #087443; background: #e7f7ee; padding: 4px 9px; border-radius: 999px; margin-top: 10px; font-weight: 650; }
+  .education-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+  .edu { background: white; border-radius: 23px; padding: 24px; box-shadow: var(--shadow); min-height: 150px; }
+  .edu .degree { color: var(--blue); font-size: 12px; text-transform: uppercase; font-weight: 700; letter-spacing: .08em; margin-bottom: 13px; }
+  .edu h3 { margin: 0 0 8px; font-size: 20px; letter-spacing: -.035em; line-height: 1.2; }
+  .edu p { margin: 0; color: var(--muted); font-size: 14px; }
+  .skills { background: #1d1d1f; color: white; border-radius: 32px; padding: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 34px; align-items: center; }
+  .skills h2 { font-size: clamp(34px, 4vw, 48px); letter-spacing: -.06em; line-height: 1.05; margin: 0 0 13px; }
+  .skills p { color: #a1a1a6; margin: 0; max-width: 390px; }
+  .pills { display: flex; flex-wrap: wrap; gap: 10px; }
+  .pill { padding: 10px 14px; border: 1px solid rgba(255,255,255,.19); color: #f5f5f7; border-radius: 999px; font-size: 14px; background: rgba(255,255,255,.055); }
+  .contact { text-align: center; padding: 95px 0 105px; }
+  .contact h2 { font-size: clamp(42px, 7vw, 76px); letter-spacing: -.07em; line-height: 1; margin: 0 0 18px; }
+  .contact p { color: var(--muted); font-size: 19px; margin: 0 auto 27px; }
+  .contact-links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+  footer { border-top: 1px solid var(--line); padding: 22px 28px; color: var(--muted); font-size: 12px; }
+  .footer-inner { max-width: 1120px; margin: auto; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) { html{scroll-behavior:auto} .reveal{opacity:1;transform:none;transition:none} *{transition:none!important} }
+  @media (max-width: 760px) {
+    nav { padding: 0 20px; }
+    .menu-btn { display: block; }
+    .nav-links { display: none; position: absolute; top: 56px; left: 0; right: 0; background: rgba(245,245,247,.97); backdrop-filter: blur(20px); padding: 18px 24px 24px; flex-direction: column; align-items: flex-start; gap: 18px; border-bottom: 1px solid var(--line); }
+    .nav-links.open { display: flex; }
+    .container { padding: 0 20px; }
+    .hero { padding: 65px 0 42px; }
+    .hero-panel { padding: 0 14px; }
+    .hero-art { min-height: 230px; border-radius: 24px; }
+    .orb { width: 150px; height: 150px; }
+    .art-caption { left: 19px; bottom: 17px; }
+    .section { padding: 55px 0; }
+    .grid { grid-template-columns: 1fr; }
+    .card { padding: 25px; }
+    .experience { grid-template-columns: 1fr; gap: 25px; }
+    .experience-intro { position: static; }
+    .job { padding: 21px; grid-template-columns: 1fr; }
+    .job .date { text-align: left; grid-row: 3; padding-top: 0; }
+    .education-grid { grid-template-columns: 1fr; }
+    .skills { padding: 30px 24px; grid-template-columns: 1fr; border-radius: 25px; gap: 25px; }
+    .contact { padding: 70px 0 78px; }
+  }
+</style>
+</head>
+<body>
+<div class="nav-wrap">
+  <nav aria-label="Main navigation">
+    <a class="brand" href="#top">Samagra Gupta</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Focus areas</a><a class="nav-cta" href="#contact">Let's connect ↗</a>
+    </div>
+  </nav>
+</div>
+<main id="top">
+  <section class="hero container">
+    <div class="eyebrow">Product marketing · Enterprise technology · Growth</div>
+    <h1><span class="gradient">Samagra Gupta.</span></h1>
+    <p class="hero-copy">I connect <strong>product strategy with demand generation</strong> — shaping the story, taking it to market, and learning from what resonates.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="#experience">Explore my work <span>↓</span></a>
+      <a class="button secondary" href="https://www.linkedin.com/in/samagra-gupta" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+    </div>
+  </section>
+  <div class="hero-panel">
+    <div class="hero-art" role="img" aria-label="Abstract blue sphere on a dark gradient background">
+      <div class="orb"></div>
+      <div class="art-caption"><strong>Strategy meets execution.</strong>From positioning to performance.</div>
+    </div>
+  </div>
+
+  <section class="section container" id="about">
+    <div class="section-heading reveal">
+      <div class="eyebrow">A little about me</div>
+      <h2>Clear positioning.<br>Measurable momentum.</h2>
+      <p>Product marketing with a performance mindset, grounded in business thinking and hands-on execution.</p>
+    </div>
+    <div class="grid">
+      <article class="card reveal"><div class="icon">◈</div><h3>Product storytelling</h3><p>Turn complex enterprise technology into clear positioning, relevant messaging, and launch narratives that connect with the market.</p></article>
+      <article class="card reveal"><div class="icon">↗</div><h3>Demand generation</h3><p>Bring messaging into the market through paid search, SEO, and campaign execution—then use performance signals to improve it.</p></article>
+      <article class="card reveal"><div class="icon">◎</div><h3>Business-first thinking</h3><p>An MBA from IIM Indore, experience across technology and marketing, and an entrepreneurial view of how businesses grow.</p></article>
+    </div>
+  </section>
+
+  <section class="section container" id="experience">
+    <div class="experience">
+      <div class="experience-intro reveal">
+        <div class="eyebrow">The journey so far</div>
+        <h2>Experience that connects the dots.</h2>
+        <p>From search and performance marketing to enterprise product positioning, each chapter has added another angle to how I think about growth.</p>
+      </div>
+      <div class="timeline">
+        <article class="job current reveal">
+          <div><h3>HCLSoftware</h3><div class="role">Product Marketing Manager</div><div class="meta">Pune District, Maharashtra, India</div><span class="current-tag">Current role</span></div>
+          <div class="date">May 2025 — Present</div>
+        </article>
+        <article class="job reveal">
+          <div><h3>Dr. Reddy’s Laboratories</h3><div class="role">Summer Intern</div><div class="meta">Hyderabad, Telangana, India</div></div>
+          <div class="date">Apr — Jun 2024</div>
+        </article>
+        <article class="job reveal">
+          <div><h3>Surya Arts</h3><div class="role">Marketing Manager</div><div class="meta">Lucknow, Uttar Pradesh, India</div></div>
+          <div class="date">Apr 2022 — Mar 2023</div>
+        </article>
+        <article class="job reveal">
+          <div><h3>Publicis Groupe</h3><div class="role">Search Engine Optimization Analyst</div><div class="meta">Gurugram, Haryana, India</div></div>
+          <div class="date">Oct 2021 — Apr 2022</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="education">
+    <div class="section-heading reveal">
+      <div class="eyebrow">Education</div>
+      <h2>Business foundations.<br>A wider perspective.</h2>
+    </div>
+    <div class="education-grid">
+      <article class="edu reveal"><div class="degree">MBA · 2023–2025</div><h3>Indian Institute of Management, Indore</h3><p>Master of Business Administration</p></article>
+      <article class="edu reveal"><div class="degree">BBA · 2018–2021</div><h3>Amity Education Group</h3><p>Bachelor of Business Administration — Business Administration and Management</p></article>
+      <article class="edu reveal"><div class="degree">HSC · 2017–2018</div><h3>Lucknow Public Schools and Colleges</h3><p>Science</p></article>
+      <article class="edu reveal"><div class="degree">SSC · 2015–2016</div><h3>Lucknow Public Schools and Colleges</h3><p>Science</p></article>
+    </div>
+  </section>
+
+  <section class="section container" id="skills">
+    <div class="skills reveal">
+      <div><div class="eyebrow" style="color:#a1a1a6">What I bring</div><h2>Curiosity with a commercial lens.</h2><p>I enjoy connecting customer needs, product value, and go-to-market execution to help teams make sharper decisions.</p></div>
+      <div class="pills"><span class="pill">Product positioning</span><span class="pill">Go-to-market</span><span class="pill">Demand generation</span><span class="pill">Paid search</span><span class="pill">SEO</span><span class="pill">Marketing strategy</span><span class="pill">Entrepreneurship</span><span class="pill">Management</span><span class="pill">B2B marketing</span></div>
+    </div>
+  </section>
+
+  <section class="contact container" id="contact">
+    <div class="eyebrow">Have something interesting in mind?</div>
+    <h2>Let’s make it happen.</h2>
+    <p>Open to thoughtful conversations about product, marketing, and growth.</p>
+    <div class="contact-links">
+      <a class="button primary" href="mailto:samagra211gupta@gmail.com">Email me ↗</a>
+      <a class="button secondary" href="https://www.linkedin.com/in/samagra-gupta" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <button class="button secondary" id="copyEmail" type="button">Copy email</button>
+    </div>
+    <p id="copyStatus" aria-live="polite" style="font-size:13px;margin-top:14px;min-height:20px"></p>
+  </section>
+</main>
+<footer><div class="footer-inner"><span>© <span id="year"></span> Samagra Gupta</span><span>Designed with clarity in mind.</span><a href="#top">Back to top ↑</a></div></footer>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.textContent = open ? '×' : '☰';
+  });
+  navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    menuBtn.textContent = '☰';
+  }));
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('copyEmail').addEventListener('click', async () => {
+    const email = 'samagra211gupta@gmail.com';
+    const status = document.getElementById('copyStatus');
+    try {
+      await navigator.clipboard.writeText(email);
+      status.textContent = 'Email copied to clipboard.';
+    } catch (e) {
+      status.textContent = email;
+    }
+  });
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+</script>
+</body>
+</html>
